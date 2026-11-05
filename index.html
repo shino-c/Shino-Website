@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chow Shino – Software Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Chow Shino, a Software Engineering student at Universiti Malaya building web and mobile applications. Seeking a 24-week internship from January or February 2027.">
+  <meta name="theme-color" content="#4F3FD4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%234F3FD4'/%3E%3Crect x='4' y='4' width='3' height='3' fill='%23fff'/%3E%3Crect x='9' y='4' width='3' height='3' fill='%23fff'/%3E%3Crect x='4' y='9' width='8' height='3' fill='%23FF7AA8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#home">Chow Shino</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+
+      <!-- Left: Introduction -->
+      <div class="hero-content">
+        <h1>Chow Shino</h1>
+
+        <p class="hero-role">
+          Software Engineering student at Universiti Malaya
+        </p>
+
+        <p class="hero-text">
+          I’m a Software Engineering student at Universiti Malaya who enjoys building web and mobile applications.
+          I’m looking for a 24-week internship from January or February 2027 to July 2027.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost"
+            href="assets/Chow_Shino_Resume.pdf"
+            target="_blank" rel="noopener">
+            Download resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-image">
+        <img src="Shino.jpg" alt="Photo of Chow Shino">
+      </div>
+
+    </div>
+
+    <div class="scene-wrap">
+      <canvas id="scene" width="240" height="64" aria-hidden="true"></canvas>
+    </div>
+  </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-grid">
+          <div class="prose">
+            <p>
+              I am currently a final-year Computer Science (Software Engineering) student at Universiti Malaya. 
+              I am passionate about software development, with a strong interest in full-stack, backend, and mobile application development, and I aspire to build systems that make everyday tasks more convenient and efficient.
+            </p>
+            <p>
+              Throughout my academic journey, I have worked on a variety of academic, hackathon, and personal projects that strengthened my technical skills and my practical 
+              understanding of the software development process. I am proficient in Java, Python, JavaScript, TypeScript, HTML, CSS and SQL, and I have hands-on experience with React, React Native, Node.js, and FastAPI. I am always eager to learn new technologies and adapt to evolving challenges.
+            </p>
+            <p>
+              I am a fast learner with a strong passion for technology, good teamwork and communication skills, 
+              and a habit of managing my time well across deadlines and group projects. I am excited to contribute to meaningful projects and continue growing my skills in a professional environment.
+          </div>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Penang, Malaysia</dd></div>
+            <div><dt>Studying</dt><dd>Software Engineering, Universiti Malaya</dd></div>
+            <div><dt>Looking for</dt><dd>24-week internship, Jan/Feb – Jul 2027</dd></div>
+            <div><dt>Interests</dt><dd>Full-stack, backend, mobile</dd></div>
+            <div><dt>Languages</dt><dd>Chinese, English, Malay</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2>Education</h2>
+        <article class="edu">
+          <div class="edu-head">
+            <h3>Bachelor of Computer Science (Software Engineering)</h3>
+            <span class="edu-date">2023 – 2027</span>
+          </div>
+          <p class="edu-school">Universiti Malaya · CGPA 3.83 / 4.00</p>
+          <p class="edu-courses">
+            Relevant coursework: Algorithm Design &amp; Analysis, Operating Systems, Database, Machine Learning, Software Testing
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-intro">A mix of my final year project, hackathon entries and course projects.</p>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+        <div class="project-grid" id="projectGrid"></div>
+        <div class="more-wrap">
+          <button class="btn btn-ghost" id="moreBtn" type="button" hidden></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section section-alt" id="achievements">
+      <div class="container">
+        <h2>Achievements</h2>
+        <ul class="awards">
+          <li>
+            <span class="award-title">Design Duel 2025</span>
+            <span class="award-result">2nd runner-up</span>
+          </li>
+          <li>
+            <span class="award-title">Programming League National (PLN) 2025</span>
+            <span class="award-result">National Top 15 finalist</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <ul class="chips"><li>Java</li><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>Dart</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks</h3>
+            <ul class="chips"><li>React</li><li>React Native</li><li>Expo</li><li>Flutter</li><li>Node.js</li><li>Express.js</li><li>FastAPI</li><li>JavaFX</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Firebase</li><li>Supabase</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Testing</h3>
+            <ul class="chips"><li>Selenium</li><li>Appium</li><li>Manual testing</li><li>Equivalence partitioning</li><li>Boundary value analysis</li><li>Decision tables</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; APIs</h3>
+            <ul class="chips"><li>Git</li><li>Docker</li><li>Figma</li><li>OpenAI API</li><li>Google Maps API</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-intro">I’m open to internship opportunities. The quickest way to reach me is by email.</p>
+        <ul class="contact-links" id="contactLinks"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Chow Shino</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
